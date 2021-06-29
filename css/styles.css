@@ -17,6 +17,28 @@ body {
   color: var(--text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,11 +47,32 @@ ul {
   list-style: none;
 }
 
-/* ===== HEADER ===== */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== HEADER ========== */
 .page-header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -45,6 +88,16 @@ ul {
   color: var(--logo-accent-color);
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 92px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
   color: var(--primary-dark-color);
 }
@@ -56,6 +109,15 @@ ul {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--primary-accent-color);
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-link {
@@ -93,9 +155,9 @@ ul {
   background-color: var(--primary-accent-color);
   cursor: pointer;
 }
-/* ===== END HERO ===== */
+/* ========== END HERO ========= */
 
-/* ===== FEATURES ===== */
+/* ========= FEATURES ========= */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -120,7 +182,7 @@ ul {
   text-transform: uppercase;
   color: var(--primary-dark-color);
 }
-/* ===== END FEATURES ===== */
+/* ========= END FEATURES ========= */
 
 .section-title {
   font-weight: 700;
@@ -131,7 +193,7 @@ ul {
   color: var(--primary-dark-color);
 }
 
-/* ===== TEAM SECTION ===== */
+/* ========= TEAM SECTION ========= */
 .team {
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -146,9 +208,9 @@ ul {
 .team-position {
   line-height: 0.84;
 }
-/* ===== END TEAM SECTION ===== */
+/* ========= END TEAM SECTION ========= */
 
-/* ===== PORTFOLIO ===== */
+/* ========= PORTFOLIO ========= */
 .portfolio-button {
   font-family: Roboto;
   font-weight: 500;
@@ -180,9 +242,9 @@ ul {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-/* ===== END PORTFOLIO ===== */
+/* ========= END PORTFOLIO ========= */
 
-/* ===== FOOTER ===== */
+/* ========= FOOTER ========= */
 .footer {
   background-color: var(--primary-background-color);
 }
@@ -209,4 +271,4 @@ ul {
 .footer-contact:focus {
   color: var(--primary-white);
 }
-/* ===== END FOOTER ===== */
+/* ========= END FOOTER ========= */
