@@ -4,10 +4,14 @@
   --logo-accent-color: #000000;
   --primary-accent-color: #2196f3;
   --primary-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
   --primary-white: #ffffff;
   --secondary-white: rgba(255, 255, 255, 0.6);
   --primary-dark-color: #212121;
   --text-color: #757575;
+  --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -128,14 +132,19 @@ ul {
 .contact-link:focus {
   color: var(--primary-accent-color);
 }
-/* ===== END HEADER ===== */
+/* ========= END HEADER ========= */
 
-/* ===== HERO ===== */
+/* ============ HERO ============ */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--primary-background-color);
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -146,13 +155,22 @@ ul {
 }
 
 .hero-button {
+  display: block;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--primary-white);
+
   background-color: var(--primary-accent-color);
+  box-shadow: var(--btn-shadow);
   cursor: pointer;
 }
 /* ========== END HERO ========= */
@@ -172,8 +190,23 @@ ul {
 }
 
 .features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-title {
@@ -184,7 +217,23 @@ ul {
 }
 /* ========= END FEATURES ========= */
 
+/* ========= OUR WORK ========= */
+.work {
+  margin-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+  justify-content: center;
+}
+
+.work-item:not(:last-child) {
+  padding-right: 30px;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -192,14 +241,41 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-dark-color);
 }
+/* ========= END OUR WORK ========= */
 
 /* ========= TEAM SECTION ========= */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-background-color);
+
   font-size: 16px;
   letter-spacing: 0.03em;
 }
 
+.team-list {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.team-card {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white);
+  box-shadow: var(--card-shadow);
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .team-name {
+  margin-bottom: 10px;
   font-weight: 500;
   line-height: 1.19;
   color: var(--primary-dark-color);
@@ -211,13 +287,33 @@ ul {
 /* ========= END TEAM SECTION ========= */
 
 /* ========= PORTFOLIO ========= */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .portfolio-button {
-  font-family: Roboto;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--primary-dark-color);
+  background-color: var(--secondary-background-color);
   cursor: pointer;
 }
 
@@ -228,7 +324,26 @@ ul {
   background-color: var(--primary-accent-color);
 }
 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.example {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.example-box {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
 .project-name {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -246,10 +361,14 @@ ul {
 
 /* ========= FOOTER ========= */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--primary-background-color);
 }
 
 .address {
+  margin-top: 20px;
+
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -265,6 +384,10 @@ ul {
 
 .footer-contact {
   color: var(--secondary-white);
+}
+
+.footer-contact:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contact:hover,
