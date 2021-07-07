@@ -9,9 +9,10 @@
   --secondary-white: rgba(255, 255, 255, 0.6);
   --primary-dark-color: #212121;
   --text-color: #757575;
+  --
   --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  --btn-shadow: box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -69,14 +70,14 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .navigation {
@@ -136,6 +137,10 @@ ul {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--primary-accent-color);
+}
+
+.header-border {
+  border-bottom: 1px solid #ECECEC
 }
 /* ========= END HEADER ========= */
 
@@ -223,7 +228,7 @@ ul {
 
 /* ========= OUR WORK ========= */
 .work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .work-list {
@@ -296,7 +301,7 @@ ul {
 }
 
 .btn-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .portfolio-button {
@@ -324,8 +329,8 @@ ul {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -20px;
-  margin-left: -20px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .example {
